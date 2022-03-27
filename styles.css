@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Helvetica";
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.one {
+    background-color: red;
+}
+
+html {
+    background-color: darkslategrey;
+}
+
+img {
+    width: 100px;
+}
+
+nav {
+    background-color: black;
+    font-size: 36px;
+    text-align: center;
+    word-spacing: 50px;
+}
+
+nav a:hover {
+    color:deepskyblue;
+}
