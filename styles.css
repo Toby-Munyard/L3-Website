@@ -26,11 +26,16 @@ img {
 }
 .NavLinks {
     grid-column: 2/2;
+    word-spacing: 50px;
 }
 
 .NavLogo {
     grid-column: 1/1;
     grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    font-size: 48px;
 }
 
 .NavSocials {
@@ -43,18 +48,17 @@ img {
     width: 70%;
 }
 .Logo {
-    width: 15%;
-    align-content: left;
+    width: 50%;
+    float: left;
 }
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-column: 1/4;
     grid-row: 1/1;
     background-color: lightslategray;
-    font-size: 36px;
+    font-size: 56px;
     text-align: center;
-    word-spacing: 50px;
 }
 
 nav a:hover {
