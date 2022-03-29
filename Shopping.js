@@ -2,9 +2,9 @@ function run() {
     var main = document.getElementById("products");
 
     var products = [
-        ['20', 'Random guy NFT', 'img1.jpg'],
-        ['25', 'Funny Yellow Dog NFT', 'img2.png'],
-        ['3.99', 'Disgusting Ice Cream Bowl NFT', 'img3.jpg'],
+        ['20', 'Random guy NFT', 'images/img1.jpg'],
+        ['25', 'Funny Yellow Dog NFT', 'images/img2.png'],
+        ['3.99', 'Disgusting Ice Cream Bowl NFT', 'images/img3.jpg'],
     ];
 
     var totalItems = products.length;
