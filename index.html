@@ -3,8 +3,41 @@
 <link rel="stylesheet" href="styles.css">
 
 <head>
-    <title>Smeehc Clothing</title>
-    <script src="Shopping.js"></script>
+    <title>Stardust Clothing</title>
+    <script>
+        var imgs = [
+            'images/Hoodie1.png', 'images/Hoodie2.png', 'images/Hoodie3.png', 'images/Hoodie4.png', 'images/Hoodie5.png'
+        ]; //imgs for imgslider
+
+        var slideCounter = 1;
+
+        function change() {
+            document.getElementById('slider').src = imgs[slideCounter]
+            slideCounter++;
+
+
+            if (slideCounter >= 4) {
+                slideCounter = 0;
+            }
+        }; //imgslider javascript function that changes image onclick
+
+        var imgs2 = [
+            'images/Tshirt1.png', 'images/Tshirt2.png', 'images/Tshirt3.png', 'images/Tshirt4.png', 'images/Tshirt5.png'
+        ]; //imgs for imgslider2
+
+        var slideCounter2 = 1;
+
+        function change2() {
+            document.getElementById('slider2').src = imgs2[slideCounter2]
+            slideCounter2++;
+
+
+            if (slideCounter2 >= 4) {
+                slideCounter2 = 0;
+            }
+        }; //imgslider2 javascript function that changes image onclick
+
+    </script>
 </head>
 
 <body onload="run()">
@@ -15,8 +48,7 @@
             <a href="Contact.html">Contact</a>
         </div>
         <div class="NavLogo">
-            <img class="Logo" src="images/img2.png">
-            <p>Smeech</p>
+            <img class="Logo" src="images/Logo.png">
         </div>
         <div class="NavSocials">
             <img class='instagram' src='images/instagram.png' alt='instagram'>
@@ -31,10 +63,10 @@
             <h1>GOING OUT OF BUSINESS SALE BUY NOW!</h1>
         </div>
         <div class="one">
-            <img src="images/img1.jpg">
+            <img id='slider' onclick="change()" src='images/Hoodie1.png' alt='Hoodie1'>
         </div>
         <div class="two">
-            <img src="images/img2.png">
+            <img id='slider2' onclick="change2()" src='images/Tshirt1.png' alt='Tshirt1'>
         </div>
         <div class="three">
             <h1>SALE 25% OFF</h1>
