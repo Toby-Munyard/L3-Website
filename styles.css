@@ -8,12 +8,12 @@
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 200px 100px;
+    grid-template-rows: 80px 300px 100px;
     /* grid-gap: 20px; */
 }
 
 html {
-    background-color: darkorange;
+    background-color: darkslategrey;
 }
 
 img {
@@ -21,41 +21,47 @@ img {
     height: 100%;
 }
 .NavLinks {
-    grid-column: 2/2;
+    /* grid-column: 2/2; */
     word-spacing: 50px;
+    align-self: center;
 }
 
-.NavLogo {
+/* .NavLogo {
     grid-column: 1/1;
     grid-row: 1/1;
     display: grid;
     grid-template-columns: 1fr 2fr;
     text-align: left;
     font-size: 48px;
-}
+} */
 
 .NavSocials {
-    grid-column: 3/3;
-    grid-row: 1/1;
+    /* grid-column: 3/3;
+    grid-row: 1/1; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: right;
+    justify-self: center;
     height: 100%;
     width: 70%;
+    grid-gap: 2px;
 }
+
 .Logo {
-    width: 300%;
-    float: left;
+    width: 100%;
+    /*
+    float: left; */
 }
 nav {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-column: 1/4;
     grid-row: 1/1;
-    background-color: red;
-    font-size: 56px;
+    background-color: gray;
+    font-size: 2.5vw;
     text-align: center;
 }
+
+
 
 nav a:hover {
     color:deepskyblue;
@@ -84,6 +90,7 @@ nav a:hover {
     grid-column: 1/1;
     background-color: lightslategray;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .four {
@@ -91,10 +98,33 @@ nav a:hover {
     grid-column: 3/3;
     background-color: lightslategray;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .Sale {
-    grid-row: 1/1;
+    grid-row: 1/4;
     grid-column: 2/3;
     text-align: center;
+    font-size: 1.5vw;
+    background-color: lightslategray;
 }
+/* ipad dimentions */
+@media screen and (max-width: 600px) {
+    nav {
+        width: 0.5vw;
+    }
+    nav a{
+      display: block;
+      width: 100%;
+      font-size: 30px;
+      margin: 10px 0px;
+    }
+    .Logo {
+        width: 70%;
+        height: 70%;
+    }
+    .NavSocials {
+        width: 50%;
+        height: 50%;
+    }
+  }
