@@ -13,7 +13,7 @@
 }
 
 html {
-    background-color: darkslategrey;
+    background-color: black;
 }
 
 img {
@@ -56,8 +56,8 @@ nav {
     grid-template-columns: 1fr 2fr 1fr;
     grid-column: 1/4;
     grid-row: 1/1;
-    background-color: gray;
-    font-size: 2.5vw;
+    background-color: yellow;
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -88,7 +88,7 @@ nav a:hover {
 .three {
     grid-row: 3/3;
     grid-column: 1/1;
-    background-color: lightslategray;
+    background-color: yellow;
     text-align: center;
     font-size: 1.5vw;
 }
@@ -96,7 +96,7 @@ nav a:hover {
 .four {
     grid-row: 3/3;
     grid-column: 3/3;
-    background-color: lightslategray;
+    background-color: yellow;
     text-align: center;
     font-size: 1.5vw;
 }
@@ -106,25 +106,29 @@ nav a:hover {
     grid-column: 2/3;
     text-align: center;
     font-size: 1.5vw;
-    background-color: lightslategray;
+    background-color: yellow;
 }
 /* ipad dimentions */
 @media screen and (max-width: 600px) {
     nav {
-        width: 0.5vw;
-    }
+         width: 0.5vw; 
+         display: block;
+         width: 100%;
+         font-size: 15px;
+         margin: 5px 0px;
+    };
     nav a{
       display: block;
       width: 100%;
-      font-size: 30px;
-      margin: 10px 0px;
-    }
+      font-size: 15px;
+      margin: 5px 0px;
+    };
     .Logo {
-        width: 70%;
-        height: 70%;
-    }
+        width: 35vw;
+        height: 15vw;
+    };
     .NavSocials {
-        width: 50%;
-        height: 50%;
-    }
-  }
+        width: 30vw;
+        height: 10vw%;
+    };
+  };
