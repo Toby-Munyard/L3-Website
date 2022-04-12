@@ -61,8 +61,6 @@ nav {
     text-align: center;
 }
 
-
-
 nav a:hover {
     color:deepskyblue;
 }
@@ -90,7 +88,7 @@ nav a:hover {
     grid-column: 1/1;
     background-color: yellow;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .four {
@@ -98,7 +96,7 @@ nav a:hover {
     grid-column: 3/3;
     background-color: yellow;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .Sale {
@@ -108,14 +106,14 @@ nav a:hover {
     font-size: 1.5vw;
     background-color: yellow;
 }
+
+p {
+    font-size: 1.5vw;
+}
 /* ipad dimentions */
 @media screen and (max-width: 600px) {
     nav {
-         width: 0.5vw; 
-         display: block;
-         width: 100%;
-         font-size: 15px;
-         margin: 5px 0px;
+         width: 100%; 
     };
     nav a{
       display: block;
@@ -124,11 +122,27 @@ nav a:hover {
       margin: 5px 0px;
     };
     .Logo {
-        width: 35vw;
-        height: 15vw;
+        width: 50%;
+        height: 50%;
     };
     .NavSocials {
-        width: 30vw;
-        height: 10vw%;
+        width: 50%;
+        height: 50%;
     };
+    .three {
+        grid-row: 3/3;
+        grid-column: 1/1;
+        background-color: yellow;
+        text-align: center;
+        font-size: 2vw;
+    };
+    
+    .four {
+        grid-row: 3/3;
+        grid-column: 3/3;
+        background-color: yellow;
+        text-align: center;
+        font-size: 300%;
+    };
+
   };

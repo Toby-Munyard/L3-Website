@@ -2,8 +2,8 @@ function run() {
     var main = document.getElementById("products");
 
     var products = [
-        ['20', 'Random guy NFT', 'images/img1.jpg'],
-        ['25', 'Funny Yellow Dog NFT', 'images/img2.png'],
+        ['60', 'Hoodies', 'images/hoodie1.png'],
+        ['25', 'T Shirts', 'images/Tshirt1.png'],
         ['3.99', 'Disgusting Ice Cream Bowl NFT', 'images/img3.jpg'],
     ];
 
