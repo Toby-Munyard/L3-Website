@@ -3,8 +3,15 @@ function run() {
 
     var products = [
         ['60', 'Hoodies', 'images/hoodie1.png'],
+        ['60', 'Hoodies', 'images/hoodie2.png'],
+        ['60', 'Hoodies', 'images/hoodie3.png'],
+        ['60', 'Hoodies', 'images/hoodie4.png'],
+        ['60', 'Hoodies', 'images/hoodie5.png'],
         ['25', 'T Shirts', 'images/Tshirt1.png'],
-        ['3.99', 'Disgusting Ice Cream Bowl NFT', 'images/img3.jpg'],
+        ['25', 'T Shirts', 'images/Tshirt2.png'],
+        ['25', 'T Shirts', 'images/Tshirt3.png'],
+        ['25', 'T Shirts', 'images/Tshirt4.png'],
+        ['25', 'T Shirts', 'images/Tshirt5.png'],
     ];
 
     var totalItems = products.length;

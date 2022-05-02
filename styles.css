@@ -120,8 +120,11 @@ nav a:hover {
     background-color: yellow;
 }
 
-.Products {
-    background-color: yellow;
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: red;
 }
 /* ipad dimentions */
 @media screen and (max-width: 600px) {
