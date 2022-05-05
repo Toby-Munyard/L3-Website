@@ -108,6 +108,33 @@ nav a:hover {
     background-color: yellow;
 }
 
+ul {
+    grid-column: 1/4;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+li {
+    width: 90%;
+    margin: 20px 0px;
+    background-color: yellow;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    justify-items: ;
+}
+
+li img {
+    width: 100%;
+}
+
 /* p {
     font-size: 2vw;
 } */
@@ -120,10 +147,10 @@ nav a:hover {
     background-color: yellow;
 }
 
-.products {
+.scriptbackground {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 300px 500px 500px;
     color: red;
 }
 /* ipad dimentions */

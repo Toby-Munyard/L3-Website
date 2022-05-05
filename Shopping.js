@@ -2,16 +2,16 @@ function run() {
     var main = document.getElementById("products");
 
     var products = [
-        ['60', 'Hoodies', 'images/hoodie1.png'],
-        ['60', 'Hoodies', 'images/hoodie2.png'],
-        ['60', 'Hoodies', 'images/hoodie3.png'],
-        ['60', 'Hoodies', 'images/hoodie4.png'],
-        ['60', 'Hoodies', 'images/hoodie5.png'],
-        ['25', 'T Shirts', 'images/Tshirt1.png'],
-        ['25', 'T Shirts', 'images/Tshirt2.png'],
-        ['25', 'T Shirts', 'images/Tshirt3.png'],
-        ['25', 'T Shirts', 'images/Tshirt4.png'],
-        ['25', 'T Shirts', 'images/Tshirt5.png'],
+        ['60', 'Hoodie In White', 'images/hoodie1.png'],
+        ['60', 'Hoodie In Cyan', 'images/hoodie2.png'],
+        ['60', 'Hoodie In Purple', 'images/hoodie3.png'],
+        ['60', 'Hoodie In Green', 'images/hoodie4.png'],
+        ['60', 'Hoodie In Red', 'images/hoodie5.png'],
+        ['25', 'T Shirt In White', 'images/Tshirt1.png'],
+        ['25', 'T Shirt In Cyan', 'images/Tshirt2.png'],
+        ['25', 'T Shirt In Purple', 'images/Tshirt3.png'],
+        ['25', 'T Shirt In Green', 'images/Tshirt4.png'],
+        ['25', 'T Shirt In Red', 'images/Tshirt5.png'],
     ];
 
     var totalItems = products.length;
@@ -31,7 +31,8 @@ function run() {
         list.appendChild(para);
         list.appendChild(button);
         list.appendChild(typeBox);
-
+        
+        para.innerHTML =products[i][0];
         price.innerHTML = '$' + products[i][0];
         para.innerHTML = products[i][1];
         button.innerHTML = 'Add to cart';
