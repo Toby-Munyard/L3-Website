@@ -9,7 +9,7 @@
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 300px 100px;
+    grid-template-rows: 80px 500px 100px;
     /* grid-gap: 20px; */
 }
 
@@ -128,13 +128,20 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     align-items: start;
-    justify-items: ;
+    justify-items: center;
 }
 
 li img {
     width: 100%;
 }
 
+/* li button {
+    justify-self: left;
+}
+
+li text {
+    justify-self: right;
+} */
 /* p {
     font-size: 2vw;
 } */
@@ -171,6 +178,12 @@ li img {
     .NavSocials {
         width: 100%;
         height: 100%;
+    }
+    .one{
+        height: 70%;
+    }
+    .two{
+        height: 70%;
     }
     .three {
         font-size: 50%;
