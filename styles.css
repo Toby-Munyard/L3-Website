@@ -160,6 +160,10 @@ li text {
     grid-template-rows: 300px 500px 500px;
     color: red;
 }
+#cartProducts {
+    display: block;
+}
+
 /* ipad dimentions */
 @media screen and (max-width: 600px) {
     nav {

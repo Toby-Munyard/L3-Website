@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="images/Star Sprite.png">
 </head>
 
-<body>
+<body onload="loadCart()">
     <nav>
             <img class="Logo" src="images/Logo.png">
         <div class="NavLinks">
             <a href="index.html">Home</a>
-            <a href="Cart.html">Cart</a>
-            <a href="Contact.html">Contact</a>
+            <a href="Cart.html">Shopping</a>
+            <a href="Contact.html">Cart</a>
         </div>
         <div class="NavSocials">
             <img class='instagram' src='images/instagram.png' alt='instagram'>
@@ -22,17 +22,20 @@
             <img class='youtube' src='images/youtube.png' alt='youtube'>
         </div>
     </nav>
-    <div class="Info">
-    <h1>Contact Information</h1>
-    <p>271562351</p>
-    <p2>STARDUSTContact@gmail.com</p2>
-        </div>
+    <div class="cartInfo">
+        <h1>Cart Items:</h1>
+        <h2 id='itemCount'>0</h2>
+        <ul id="cartProducts"></ul>
+    </div>
 
     <div class="main">
         <div class="one"></div>
         <div class="two"></div>
         <div class="three"></div>
         <div class="four"></div>
+    </div>
+    <div class="scriptbackground">
+        <script src="Shopping.js"></script>
     </div>
 
 </body>
