@@ -64,10 +64,6 @@ function run() {
         var itemCounter = document.getElementById('itemCount');
 
         totalItems = 0;
-        
-        for (var i = 0; i < cartItems.length; i++) {
-            totalItems += cartItems[i][1];
-        }
 
         window.sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
 
@@ -76,60 +72,67 @@ function run() {
 
         cartItems = data;
 
+        for (var i = 0; i < cartItems.length; i++) {
+            totalItems += cartItems[i][1];
+        }
+
         itemCounter.innerHTML = totalItems;
 
     }
 }
-    function loadCart() {
-        var main = document.getElementById('cartProducts');
-        // elements needing to be added
 
-        var data = sessionStorage.getItem('cartItems');
-        data = JSON.parse(data);
+function loadCart() {
+    var main = document.getElementById('cartProducts');
+    // elements needing to be added
 
-        cartItems = data;
+    var data = sessionStorage.getItem('cartItems');
+    data = JSON.parse(data);
 
-        updateCart();
-    
-        for (var i = 0; i < cartItems.length; i++) {
-            var ele = document.createElement('li');
-            var pic = document.createElement('img');
-            var price = document.createElement('h1');
-            var desc = document.createElement('h2');
-            var deleteItem = document.createElement('button');
-            var amount = document.createElement('h2');
-            var subtotal = document.createElement('h3');
-            
-            // Push elements into html
-            main.appendChild(ele);
-            ele.appendChild(pic);
-            ele.appendChild(price);
-            ele.appendChild(desc);
-            ele.appendChild(deleteItem);
-            ele.appendChild(amount);
-            ele.appendChild(subtotal);
-            //edit pusher elements info from array
-    
-            pic.src = cartItems[i][0][0];
-            price.innerHTML = '$' + cartItems[i][0][1];
-            desc.innerHTML = cartItems[i][0][2];
+    cartItems = data;
 
-            deleteItem.innerHTML = 'Delete';
-            deleteItem.dataset.cartIndex = i;
-            deleteItem.addEventListener('click', deleteMe, false);
+    updateCart();
 
-            amount.innerHTML = cartItems[i][1];
-            subtotal.innerHTML = cartItems[i][1] * cartItems[i][0][1];
-        }
-        function deleteMe(){
-            const NUM = event.currentTarget.dataset.cartIndex;
+    for (var i = 0; i < cartItems.length; i++) {
+        var ele = document.createElement('li');
+        var pic = document.createElement('img');
+        var price = document.createElement('h1');
+        var desc = document.createElement('h2');
+        var deleteItem = document.createElement('button');
+        var amount = document.createElement('h2');
+        var subtotal = document.createElement('h3');
 
-            delete cartItems[NUM];
-            
-            cartItmes = cartItems.filter(item => item !== undefined);
+        // Push elements into html
+        main.appendChild(ele);
+        ele.appendChild(pic);
+        ele.appendChild(price);
+        ele.appendChild(desc);
+        ele.appendChild(deleteItem);
+        ele.appendChild(amount);
+        ele.appendChild(subtotal);
+        //edit pusher elements info from array
 
-            updateCart();
-            loadCart();
-            window.location.reload(true);
-        }
+        pic.src = cartItems[i][0][0];
+        price.innerHTML = '$' + cartItems[i][0][1];
+        desc.innerHTML = cartItems[i][0][2];
+
+        deleteItem.innerHTML = 'Delete';
+        deleteItem.dataset.cartIndex = i;
+        deleteItem.addEventListener('click', deleteMe, false);
+
+        amount.innerHTML = cartItems[i][1];
+        subtotal.innerHTML = '$' + cartItems[i][1] * cartItems[i][0][1];
     }
+
+}
+
+function deleteMe() {
+    const NUM = event.currentTarget.dataset.cartIndex;
+
+    delete cartItems[NUM];
+
+    cartItmes = cartItems.filter(item => item !== undefined);
+
+    updateCart();
+    loadCart();
+    window.location.reload(true);
+}
