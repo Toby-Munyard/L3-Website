@@ -56,9 +56,8 @@ function run() {
         cartItems[cartItems.length - 1][1] = Number(document.getElementById('input' + NUM).value);
 
         updateCart();
-    }
-
-    var totalItems = 0;
+    } //end func
+}
 
     function updateCart() {
         var itemCounter = document.getElementById('itemCount');
@@ -78,8 +77,8 @@ function run() {
 
         itemCounter.innerHTML = totalItems;
 
-    }
-}
+    } //end func
+  
 
 function loadCart() {
     var main = document.getElementById('cartProducts');
@@ -123,10 +122,10 @@ function loadCart() {
         subtotal.innerHTML = '$' + cartItems[i][1] * cartItems[i][0][1];
     }
 
-}
+} //end func
 
 function deleteMe() {
-    const NUM = event.currentTarget.dataset.cartIndex;
+    const NUM = Event.currentTarget.dataset.cartIndex;
 
     delete cartItems[NUM];
 
@@ -135,4 +134,4 @@ function deleteMe() {
     updateCart();
     loadCart();
     window.location.reload(true);
-}
+} //end func
