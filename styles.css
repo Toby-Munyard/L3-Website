@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/* custom font*/
+
 * {
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
-    font-family: "Helvetica";
 }
 
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 80px 500px 100px;
+    grid-template-rows: 80px 500px 150px;
     /* grid-gap: 20px; */
 }
 
 html {
     background-color: black;
+    font-family: 'Roboto Slab', serif;
 }
 
 img {
@@ -109,10 +112,11 @@ nav a:hover {
 }
 
 ul {
-    grid-column: 1/4;
     display: grid;
+    grid-column: 1/4;
     grid-gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     grid-template-rows: auto;
     justify-items: center;
     width: 80%;

@@ -49,8 +49,8 @@ function run() {
         add.addEventListener('click', adding, false);
     }
 
-    function adding(event) {
-        const NUM = event.currentTarget.dataset.cartIndex;
+    function adding(Event) {
+        const NUM = Event.currentTarget.dataset.cartIndex;
 
         cartItems.push([items[NUM]]);
         cartItems[cartItems.length - 1][1] = Number(document.getElementById('input' + NUM).value);
@@ -129,7 +129,7 @@ function deleteMe() {
 
     delete cartItems[NUM];
 
-    cartItmes = cartItems.filter(item => item !== undefined);
+    cartItems = cartItems.filter(item => item !== undefined);
 
     updateCart();
     loadCart();
