@@ -56,7 +56,7 @@ function run() {
         cartItems[cartItems.length - 1][1] = Number(document.getElementById('input' + NUM).value);
 
         updateCart();
-    } //end func
+    } //end func adds item to cart and the number of said item
 }
 
     function updateCart() {
@@ -77,7 +77,7 @@ function run() {
 
         itemCounter.innerHTML = totalItems;
 
-    } //end func
+    } //end func stores cart items in session storage meaning it can be found across multiple pages
   
 
 function loadCart() {
@@ -134,4 +134,4 @@ function deleteMe() {
     updateCart();
     loadCart();
     window.location.reload(true);
-} //end func
+} //end func deletes unwanted items from cart at checkout
