@@ -125,7 +125,7 @@ function loadCart() {
 } //end func
 
 function deleteMe() {
-    const NUM = Event.currentTarget.dataset.cartIndex;
+    const NUM = event.currentTarget.dataset.cartIndex;
 
     delete cartItems[NUM];
 

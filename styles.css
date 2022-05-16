@@ -62,9 +62,12 @@ nav {
     font-size: 3vw;
     text-align: center;
 }
+nav a{
+    color: deepskyblue;
+}
 
 nav a:hover {
-    color: deepskyblue;
+    color: purple;
 }
 
 .imgs {
