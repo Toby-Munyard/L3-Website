@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="styles.css">
-
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
     <title>Stardust Clothing</title>
-    <link rel="shortcut icon" href="images/Star Sprite.png">
+    <link rel="shortcut icon" href="images/StarSprite.png">
     <link href="http://allfont.net/allfont.css?fonts=agency-fb-bold" rel="stylesheet" type="text/css">
     <script>
         var imgs = [
@@ -46,28 +46,31 @@
 <body onload="run()">
     <nav>
         <a href="http://127.0.0.1:5500/index.html">
-        <img class="Logo" src="images/Logo.png">
-    </a>
+            <img class="Logo" src="images/Logo.png" alt="Logo">
+        </a>
+        <!-- Holds the logo and links to makes it a link to the home page that works on all pages -->
         <div class="NavLinks">
             <a href="index.html">Home</a>
             <a href="Cart.html">Shopping</a>
             <a href="Contact.html">Cart</a>
-        </div> 
+        </div>
+        <!-- NavLinks holds the links to other pages on the website -->
         <div class="NavSocials">
             <a href="https://www.instagram.com">
-            <img class='instagram' src='images/instagram.png' alt='instagram'>
+                <img class='instagram' src='images/instagram.png' alt='instagram'>
             </a>
             <a href="https://www.facebook.com">
-            <img class='facebook' src='images/facebook.png' alt='facebook'>
-        </a>
+                <img class='facebook' src='images/facebook.png' alt='facebook'>
+            </a>
             <a href="https://www.twitter.com">
-            <img class='twitter' src='images/twitter.png' alt='twitter'>
-        </a>
+                <img class='twitter' src='images/twitter.png' alt='twitter'>
+            </a>
             <a href="https://www.youtube.com">
-            <img class='youtube' src='images/youtube.png' alt='youtube'>
-        </a>
-        </div> 
-    </nav> 
+                <img class='youtube' src='images/youtube.png' alt='youtube'>
+            </a>
+        </div>
+        <!-- NavSocials holds the images of social media links that link to websites -->
+    </nav>
     <!-- nav holds information such as the website logo, links to other pages and social media links -->
 
     <div class="main">
@@ -75,7 +78,9 @@
             <h1>GOING OUT OF BUSINESS SALE BUY NOW!</h1>
             <!-- <h2>Thank you for all your support over the years! Unfortunatly we can no longer sustain STARDUST and it
                 will be coming to a close in the coming weeks, get your purchases in while you can.</h2> -->
-                <iframe class="video" width="100%" height="50%" src="https://www.youtube.com/embed/lhG5WXmedIc" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/lhG5WXmedIc" title="Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <div class="one">
             <img id='slider' onclick="change()" src='images/Hoodie1.png' alt='Hoodie1'>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="styles.css">
-
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
     <title>Stardust Clothing Cart</title>
-    <link rel="shortcut icon" href="images/Star Sprite.png">
+    <link rel="shortcut icon" href="images/StarSprite.png">
 </head>
 
 <body onload="run()">
     <nav>
         <a href="http://127.0.0.1:5500/index.html">
-        <img class="Logo" src="images/Logo.png">
-    </a>
+            <img class="Logo" src="images/Logo.png" alt="Logo">
+        </a>
+        <!-- Holds the logo and links to makes it a link to the home page that works on all pages -->
         <div class="NavLinks">
             <a href="index.html">Home</a>
             <a href="Cart.html">Shopping</a>
@@ -20,34 +21,36 @@
         <div class="NavSocials">
             <a href="https://www.instagram.com">
                 <img class='instagram' src='images/instagram.png' alt='instagram'>
-                </a>
-                <a href="https://www.facebook.com">
+            </a>
+            <a href="https://www.facebook.com">
                 <img class='facebook' src='images/facebook.png' alt='facebook'>
             </a>
-                <a href="https://www.twitter.com">
+            <a href="https://www.twitter.com">
                 <img class='twitter' src='images/twitter.png' alt='twitter'>
             </a>
-                <a href="https://www.youtube.com">
+            <a href="https://www.youtube.com">
                 <img class='youtube' src='images/youtube.png' alt='youtube'>
             </a>
         </div>
     </nav>
+    <!-- nav holds information such as the website logo, links to other pages and social media links -->
     <div class="cartInfo">
         <h1>Cart Items:</h1>
         <h2 id='itemCount'>0</h2>
     </div>
+    <!-- cartInfo holds the value for the number of cart items and displays it on screen -->
 
-
-    </ul>
     <div class="main">
         <ul id="products">
             <!-- <div class="one"></div>
             <div class="two"></div>
             <div class="three"></div>
             <div class="four"></div> -->
+        </ul>
     </div>
     <div class="scriptbackground">
         <script src="Shopping.js"></script>
     </div>
+    <!-- scriptBackground runs the javascript fo the page -->
 
 </body>

@@ -57,28 +57,28 @@ function run() {
 
         updateCart();
     } //end func adds item to cart and the number of said item
-}
+}//end func run holds majority of things cart needs to display the differnet iteams and store their data
 
-    function updateCart() {
-        var itemCounter = document.getElementById('itemCount');
+function updateCart() {
+    var itemCounter = document.getElementById('itemCount');
 
-        totalItems = 0;
+    totalItems = 0;
 
-        window.sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+    window.sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-        var data = sessionStorage.getItem('cartItems');
-        data = JSON.parse(data);
+    var data = sessionStorage.getItem('cartItems');
+    data = JSON.parse(data);
 
-        cartItems = data;
+    cartItems = data;
 
-        for (var i = 0; i < cartItems.length; i++) {
-            totalItems += cartItems[i][1];
-        }
+    for (var i = 0; i < cartItems.length; i++) {
+        totalItems += cartItems[i][1];
+    }
 
-        itemCounter.innerHTML = totalItems;
+    itemCounter.innerHTML = totalItems;
 
-    } //end func stores cart items in session storage meaning it can be found across multiple pages
-  
+} //end func stores cart items in session storage meaning it can be found across multiple pages
+
 
 function loadCart() {
     var main = document.getElementById('cartProducts');
@@ -122,7 +122,7 @@ function loadCart() {
         subtotal.innerHTML = '$' + cartItems[i][1] * cartItems[i][0][1];
     }
 
-} //end func
+} //end func loadCart holds items and stores them in sessionStorage so they work between the shopping and cart pages, also creates the delete button for the deleteMe function
 
 function deleteMe() {
     const NUM = event.currentTarget.dataset.cartIndex;
