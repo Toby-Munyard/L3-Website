@@ -51,10 +51,16 @@ img {
     grid-gap: 5px;
 }
 
+.NavSocials a:hover {
+    opacity: 50%;
+}
+
 .Logo {
     width: 100%;
-    /*
-    float: left; */
+}
+
+.Logo:hover {
+    opacity: 50%; 
 }
 
 nav {
