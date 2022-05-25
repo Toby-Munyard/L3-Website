@@ -41,12 +41,14 @@ function run() {
         desc.innerHTML = items[i][2];
         add.innerHTML = 'Add to Cart';
         typeBox.type = 'number';
+        //displays buttons, text etc. on product boxes
 
         typeBox.setAttribute("id", "input" + i);
         typeBox.value = 1;
 
         add.dataset.cartIndex = i;
         add.addEventListener('click', adding, false);
+        //adds item to cart
     }
 
     function adding(Event) {
