@@ -215,7 +215,7 @@ li text {
         font-size: 3vw;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .Logo {
