@@ -70,6 +70,7 @@ function updateCart() {
 
     var data = sessionStorage.getItem('cartItems');
     data = JSON.parse(data);
+    //stores data in sessionStorage within browser
 
     cartItems = data;
 
@@ -79,7 +80,7 @@ function updateCart() {
 
     itemCounter.innerHTML = totalItems;
 
-} //end func stores cart items in session storage meaning it can be found across multiple pages
+} //end func stores cart items in sessionStorage of browser meaning it can be found across multiple pages
 
 
 function loadCart() {
@@ -119,9 +120,11 @@ function loadCart() {
         deleteItem.innerHTML = 'Delete';
         deleteItem.dataset.cartIndex = i;
         deleteItem.addEventListener('click', deleteMe, false);
+        //delete button
 
         amount.innerHTML = cartItems[i][1];
         subtotal.innerHTML = '$' + cartItems[i][1] * cartItems[i][0][1];
+        //final cost of all items
     }
 
 } //end func loadCart holds items and stores them in sessionStorage so they work between the shopping and cart pages, also creates the delete button for the deleteMe function
